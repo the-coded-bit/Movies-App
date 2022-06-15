@@ -1,0 +1,34 @@
+
+.Navbar{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:  0;
+    z-index: 3;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2em;
+    flex-grow: 2;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    margin-right: 2em;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover{
+    color: blanchedalmond;
+}

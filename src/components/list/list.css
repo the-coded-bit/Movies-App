@@ -1,0 +1,118 @@
+.trending{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    margin : 0;
+    padding-bottom: 20px;
+}
+
+.movies-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    background-color: black;
+    z-index: 1;
+}
+
+.movies-card{
+    position: relative;
+}
+
+.movies-card img{
+    height: auto;
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+
+}
+
+.movies-card .movies-modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size:large;
+    font-weight: bold;
+}
+
+.movies-card:hover .movies-modal{
+    opacity: 1;
+    background-color : rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.movies-card .movies-modal .btn{
+    margin: auto;
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.movies-card .movies-modal .btn i{
+    margin-top: 70%;
+    font-size: 58px;
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+
+.movies-card .movies-modal .btn i:hover{
+    transform: scale(0.7);
+}
+
+
+.movies-card .movies-modal h4{
+    text-align : center;
+    padding-left: 10%;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+.movies-card .movies-modal h4:hover{
+    color: red;
+}
+
+.movies-card .movies-modal .btn{
+    opacity: 1;
+}
+
+.movies-card:hover img{
+    transform: scale(1.1);
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+/* .spinner{
+    width: 45rem;
+    height: 45rem;
+    background:linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 43%, rgba(253,255,255,1) 100%);
+    background-size: 200%;
+    animation: bganimation 5s linear infinite ;
+    transition: all 2s ease;
+}
+
+@keyframes bganimation {
+    
+    0%{
+        background-position: 0% 100%;
+    }
+   
+    100%{
+        background-position: 100% 0%;
+    }
+} */
